@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh - var(--navbar-height));
+}
+
+.content {
+  flex: 10;
+  display: flex;
+  flex-direction: row;
+  column-gap: 4rem;
+  padding: 10rem 5rem 0 5rem;
+}
+
+.introduction,
+.graphic {
+  display: inherit;
+  align-items: flex-start;
+}
+
+.introduction {
+  flex-direction: column;
+  flex: 2;
+}
+
+.graphic {
+  flex: 1;
+}
+
+.aboutMeBtn {
+  margin-top: 2rem;
+}
+
+.extra {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
