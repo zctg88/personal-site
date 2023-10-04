@@ -3,7 +3,11 @@
   /* --background-rgb: 209, 222, 222; */
   --background-rgb: 255, 255, 255;
 
+  --shadow-rgb: 173, 180, 178;
+
   --navbar-height: 4rem;
+
+  --transition-time: 0.3s;
 }
 
 /* :root {
@@ -61,6 +65,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   max-width: 100vw;
@@ -85,5 +93,11 @@ h1 {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }

@@ -21,7 +21,7 @@
   color: rgb(var(--foreground-rgb));
   text-decoration: underline;
   font-weight: bold;
-  transition: 0.5s;
+  transition: var(--transition-time);
 }
 
 .button:hover {

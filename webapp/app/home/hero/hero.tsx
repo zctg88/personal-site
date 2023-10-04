@@ -1,8 +1,17 @@
+'use client';
+
 import Image from 'next/image';
 import styles from './hero.module.css';
 import Button from '@/components/button/button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 export default function Hero() {
+  function scrollToProjects() {
+    const projectsSection = document.getElementById('projects');
+    projectsSection?.scrollIntoView();
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.content}>
@@ -15,7 +24,14 @@ export default function Hero() {
         </div>
         <div className={styles.graphic}>Floating Graphic Here</div>
       </div>
-      <div className={styles.extra}>Projects v</div>
+      <div className={styles.extra}>
+        <span className={styles.projectArrow} onClick={scrollToProjects}>
+          Projects
+          <div className={styles.arrow}>
+            <FontAwesomeIcon icon={faArrowDown} />
+          </div>
+        </span>
+      </div>
     </div>
   );
 }
