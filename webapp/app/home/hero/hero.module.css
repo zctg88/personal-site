@@ -38,36 +38,3 @@
   justify-content: center;
   align-items: center;
 }
-
-.projectArrow {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.arrow {
-  margin-top: 0.5rem;
-  -webkit-animation: VerticalBob 1s infinite alternate;
-  -webkit-animation-timing-function: ease-out;
-  animation: VerticalBob 1s infinite alternate;
-  animation-timing-function: ease-out;
-}
-
-@keyframes VerticalBob {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-10px);
-  }
-}
-
-@-webkit-keyframes VerticalBob {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-10px);
-  }
-}
