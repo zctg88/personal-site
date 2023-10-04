@@ -1,6 +1,6 @@
 /* .button {
   background-color: rgb(209, 222, 222);
-  color: rgb(var(--foreground-rgb));
+  color: var(--foreground-hex);
   font-weight: bold;
 
   display: flex;
@@ -18,7 +18,7 @@
 } */
 
 .button {
-  color: rgb(var(--foreground-rgb));
+  color: var(--foreground-hex);
   text-decoration: underline;
   font-weight: bold;
   transition: var(--transition-time);
@@ -26,5 +26,5 @@
 
 .button:hover {
   cursor: pointer;
-  color: rgb(234, 210, 172);
+  color: #777da7;
 }

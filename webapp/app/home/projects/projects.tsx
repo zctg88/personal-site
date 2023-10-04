@@ -7,19 +7,19 @@ export default function Projects() {
       title: 'Total Cost of Care',
       category: 'Web App',
       description: 'Tracker for enterprise project budgets and Key Performance Indicators.',
-      background: 'rgb(0, 126, 167)',
+      background: '#777DA7',
     },
     {
       title: 'Calvin Electronic Medical Record',
       category: 'Web App',
       description: 'Educational tool for Calvin University nursing students.',
-      background: 'rgb(209, 222, 222)',
+      background: '#885053',
     },
     {
       title: 'Freespace',
       category: 'Mobile App',
       description: 'Tracker for the capacity of on-campus locations.',
-      background: 'rgb(183, 195, 243)',
+      background: '#C3B59F',
     },
     {
       title: 'Fat Salmon Restaurant Site',

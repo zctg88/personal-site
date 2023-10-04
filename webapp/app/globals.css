@@ -1,14 +1,22 @@
 :root {
-  --foreground-rgb: 29, 32, 31;
-  /* --background-rgb: 209, 222, 222; */
-  --background-rgb: 255, 255, 255;
-
-  --shadow-rgb: 173, 180, 178;
+  --foreground-hex: #1a2323;
+  --background-hex-primary: #f7f9f9;
+  /* --background-hex-secondary: #bbd1ea; */
+  --dulled-hex: #2c3a3a;
 
   --navbar-height: 4rem;
-
   --transition-time: 0.3s;
 }
+
+/* :root {
+  --foreground-hex: #1d201f;
+  --background-hex-primary: #dae3e5;
+  --background-hex-secondary: #bbd1ea;
+  --dulled-hex: #6b7672;
+
+  --navbar-height: 4rem;
+  --transition-time: 0.3s;
+} */
 
 /* :root {
   --max-width: 1100px;
@@ -43,7 +51,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --foreground-rgb: 255, 251, 250;
-    --background-rgb: 19, 27, 35;
+    /* --background-hex: 19, 27, 35; */
 
     --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
     --secondary-glow: linear-gradient(to bottom right, rgba(1, 65, 255, 0), rgba(1, 65, 255, 0), rgba(1, 65, 255, 0.3));
@@ -76,8 +84,8 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background-color: rgb(var(--background-rgb));
+  color: var(--foreground-hex);
+  background-color: var(--background-hex-primary);
   /* background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
 }
 
