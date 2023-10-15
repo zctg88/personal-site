@@ -4,7 +4,7 @@
   height: 100%;
   width: 100%;
   border-radius: 0.75rem;
-  box-shadow: 2px 2px 32px var(--dulled-hex);
+  /* box-shadow: 2px 2px 32px var(--dulled-hex); */
 }
 
 .container:hover {

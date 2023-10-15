@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding: 0 5rem var(--navbar-height) 5rem;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: calc(var(--navbar-height) + 2rem) 0 3rem 0;
+}

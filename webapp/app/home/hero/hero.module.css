@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 100%;
   height: calc(100vh - var(--navbar-height));
+  padding: 0 5rem;
 }
 
 .content {
@@ -10,7 +11,7 @@
   display: flex;
   flex-direction: row;
   column-gap: 4rem;
-  padding: 10rem 0 0 0;
+  padding: 6rem 0 0 0;
 }
 
 .introduction,
@@ -24,7 +25,7 @@
   flex: 2;
 }
 
-.graphic {
+.buttons {
   flex: 1;
 }
 
@@ -37,4 +38,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.extra.hidden {
+  opacity: 0;
 }

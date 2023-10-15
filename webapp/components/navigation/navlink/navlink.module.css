@@ -1,13 +1,11 @@
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   padding: 0.5rem;
-  border-radius: 0.5rem;
-  transition: background-color 0.25s;
+  height: fit-content;
+  transition: all 0.3s ease-in-out;
 }
 
 .container:hover {
   cursor: pointer;
-  background-color: gray;
+  transform: translateY(-0.2rem);
 }

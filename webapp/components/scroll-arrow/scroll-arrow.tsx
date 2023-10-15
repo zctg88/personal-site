@@ -4,7 +4,7 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './scroll-arrow.module.css';
 
-export default function ScrollArrow(props: { id: string }) {
+export default function ScrollArrow(props: { label: string; id: string }) {
   function scrollToElement() {
     const element = document.getElementById(props.id);
     element?.scrollIntoView();
@@ -12,7 +12,7 @@ export default function ScrollArrow(props: { id: string }) {
 
   return (
     <span className={styles.container} onClick={scrollToElement}>
-      Projects
+      {props.label}
       <div className={styles.arrow}>
         <FontAwesomeIcon icon={faArrowDown} />
       </div>

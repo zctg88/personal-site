@@ -7,43 +7,40 @@ export default function Projects() {
       title: 'Total Cost of Care',
       category: 'Web App',
       description: 'Tracker for enterprise project budgets and Key Performance Indicators.',
-      background: '#777DA7',
+      background: '#8C9DCF',
     },
     {
       title: 'Calvin Electronic Medical Record',
       category: 'Web App',
       description: 'Educational tool for Calvin University nursing students.',
-      background: '#885053',
+      background: '#A0C8F8',
     },
     {
       title: 'Freespace',
       category: 'Mobile App',
       description: 'Tracker for the capacity of on-campus locations.',
-      background: '#C3B59F',
+      background: '#BAA0B0',
     },
     {
       title: 'Fat Salmon Restaurant Site',
       category: 'Web App',
       description: 'For Fat Salmon website.',
-      background: 'rgb(234, 210, 172)',
+      background: '#B6C8A9',
     },
   ];
 
   return (
-    <div id="projects" className={styles.container}>
-      <span className={styles.heading}>Projects</span>
-      <div className={styles.content}>
-        {projects.map((project) => (
-          <span key={project.title}>
-            <ProjectCard
-              title={project.title}
-              category={project.category}
-              description={project.description}
-              background={project.background}
-            />
-          </span>
-        ))}
-      </div>
+    <div className={styles.content}>
+      {projects.map((project) => (
+        <span key={project.title}>
+          <ProjectCard
+            title={project.title}
+            category={project.category}
+            description={project.description}
+            background={project.background}
+          />
+        </span>
+      ))}
     </div>
   );
 }
